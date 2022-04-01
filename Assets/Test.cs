@@ -9,12 +9,13 @@ public class Boss
     //発展課題
     private int mp = 53;
 
-
+    //通常攻撃時の処理
     public void Attack()
     {
         Debug.Log(this.power + "のダメージを与えた");
     }
 
+    //被ダメージ字の処理
     public void Defence(int damage)
     {
         Debug.Log(damage + "のダメージを受けた");
@@ -22,6 +23,7 @@ public class Boss
         this.hp -= damage;
     }
 
+    //魔法攻撃の処理
     public void Magic()
     {
         if(this.mp >= 5)
